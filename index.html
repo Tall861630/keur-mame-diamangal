@@ -57,14 +57,19 @@
     h1 {
       font-family: Arial, Helvetica, sans-serif;
     }
-
     .thumbnail {
-      width: 100px; /* Smaller size for thumbnails */
-      height: auto;
-      margin: 5px;
-      border: 1px solid #ccc;
-      transition: transform 0.3s ease; /* Smooth zoom */
+    width: 30%; /* Use percentage for responsive design */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease; /* Smooth zoom */
+}
+
+@media (max-width: 600px) {
+    .thumbnail {
+        width: 48%; /* Adjust for smaller screens */
     }
+}
 
     .thumbnail:hover {
       transform: scale(1.1); /* Slight zoom on hover */
@@ -153,7 +158,6 @@
       <a href="images/IMG-20240322-WA0080.jpg" data-lightbox="family-images" data-title="Image 16">
         <img src="images/IMG-20240322-WA0080.jpg" class="thumbnail">
       </a>
-      <!-- Continue filling the rest up to 110 -->
       <a href="images/IMG-20240322-WA0081.jpg" data-lightbox="family-images" data-title="Image 17">
         <img src="images/IMG-20240322-WA0081.jpg" class="thumbnail">
       </a>
@@ -199,29 +203,11 @@
       <a href="images/IMG-20240322-WA0095.jpg" data-lightbox="family-images" data-title="Image 31">
         <img src="images/IMG-20240322-WA0095.jpg" class="thumbnail">
       </a>
-      <a href="images/IMG-20240322-WA0096.jpg" data-lightbox="family-images" data-title="Image 32">
-        <img src="images/IMG-20240322-WA0096.jpg" class="thumbnail">
-      </a>
-      <a href="images/IMG-20240322-WA0097.jpg" data-lightbox="family-images" data-title="Image 33">
-        <img src="images/IMG-20240322-WA0097.jpg" class="thumbnail">
-      </a>
       <a href="images/IMG-20240322-WA0098.jpg" data-lightbox="family-images" data-title="Image 34">
         <img src="images/IMG-20240322-WA0098.jpg" class="thumbnail">
       </a>
-      <a href="images/IMG-20240322-WA0099.jpg" data-lightbox="family-images" data-title="Image 35">
-        <img src="images/IMG-20240322-WA0099.jpg" class="thumbnail">
-      </a>
-      <a href="images/IMG-20240322-WA0100.jpg" data-lightbox="family-images" data-title="Image 36">
-        <img src="images/IMG-20240322-WA0100.jpg" class="thumbnail">
-      </a>
       <a href="images/IMG-20240322-WA0101.jpg" data-lightbox="family-images" data-title="Image 37">
         <img src="images/IMG-20240322-WA0101.jpg" class="thumbnail">
-      </a>
-      <a href="images/IMG-20240322-WA0102.jpg" data-lightbox="family-images" data-title="Image 38">
-        <img src="images/IMG-20240322-WA0102.jpg" class="thumbnail">
-      </a>
-      <a href="images/IMG-20240322-WA0103.jpg" data-lightbox="family-images" data-title="Image 39">
-        <img src="images/IMG-20240322-WA0103.jpg" class="thumbnail">
       </a>
       <a href="images/IMG-20240322-WA0104.jpg" data-lightbox="family-images" data-title="Image 40">
         <img src="images/IMG-20240322-WA0104.jpg" class="thumbnail">
