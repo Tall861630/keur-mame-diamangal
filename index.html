@@ -5,45 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Site web de la famille Keur Mame Diamangal, partage de souvenirs et d'événements familiaux">
   <meta name="keywords" content="famille, Keur Mame Diamangal, biographies, images, vidéos">
-  <title>KEUR MAME DIAMANGAL</title>
+  <title>KEUR MAME DIAME MANGALE</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
+      background-color: #f4f4f4; /* Ajout d'une couleur de fond claire */
     }
-
+  
     header {
       background-color: #020101;
       color: #fff;
       padding: 10px 0;
       text-align: center;
     }
-
+  
     nav ul {
       list-style-type: none;
       padding: 0;
     }
-
+  
     nav ul li {
       display: inline;
       margin-right: 20px;
     }
-
+  
     nav ul li a {
       color: #fff;
       text-decoration: none;
     }
-
+  
     main {
       padding: 20px;
     }
-
+  
     section {
       margin-bottom: 30px;
     }
-
+  
+    /* Styles pour les familles */
+    .famille {
+      margin-bottom: 30px; /* Plus d'espace entre les familles */
+      background-color: #fff; /* Fond blanc pour chaque famille */
+      padding: 15px; /* Espacement intérieur */
+      border-radius: 8px; /* Coins arrondis */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    }
+  
+    .famille h3 {
+      color: #333;
+      font-size: 28px; /* Taille plus grande pour les titres des familles */
+      margin-bottom: 15px; /* Espacement entre le titre et le contenu */
+      font-weight: bold; /* Gras pour plus de lisibilité */
+    }
+  
+    .lignée h4 {
+      color: #555;
+      font-size: 22px; /* Taille plus grande pour les titres des lignées */
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  
+    .lignée ul {
+      list-style-type: disc;
+      margin-left: 25px; /* Augmenter l'espace avant les listes */
+      color: #555; /* Couleur de texte plus douce */
+      line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+    }
+  
+    .lignée ul li {
+      font-size: 18px; /* Taille de texte plus grande pour les éléments de la liste */
+      padding-bottom: 5px; /* Espacement entre les éléments */
+    }
+  
     footer {
       background-color: #2e2929;
       color: #fff;
@@ -53,40 +89,41 @@
       bottom: 0;
       width: 100%;
     }
-
+  
     h1 {
       font-family: Arial, Helvetica, sans-serif;
     }
-
-    /* Smaller thumbnail images */
+  
+    /* Styles pour les images en vignettes */
     .thumbnail {
-      width: 20%; /* Smaller width for thumbnail images */
-      height: 30%;
+      width: 30%;
+      height: auto;
       margin: 5px;
       border: 1px solid #ccc;
       transition: transform 0.3s ease;
     }
-
+  
     @media (max-width: 600px) {
       .thumbnail {
-        width: 30%; /* Adjust thumbnail size for smaller screens */
+        width: 48%;
       }
     }
-
+  
     .thumbnail:hover {
-      transform: scale(1.1); /* Slight zoom on hover */
+      transform: scale(1.1);
     }
-
+  
     a {
       text-decoration: none;
     }
-
-    /* Lightbox image styles */
+  
+    /* Style pour lightbox */
     .lightbox img {
-      max-width: 100%; /* Ensure the image doesn't exceed the screen width */
-      height: auto; /* Maintain aspect ratio */
+      max-width: 100%;
+      height: auto;
     }
   </style>
+  
   <!-- Add Lightbox script -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
@@ -177,26 +214,227 @@
       <a href="images/IMG-20240322-WA0086.jpg" data-lightbox="family-images" data-title="Image 22">
         <img src="images/IMG-20240322-WA0086.jpg" class="thumbnail">
       </a>
+      <a href="images/IMG-20240322-WA0087.jpg" data-lightbox="family-images" data-title="Image 23">
+        <img src="images/IMG-20240322-WA0087.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0088.jpg" data-lightbox="family-images" data-title="Image 24">
+        <img src="images/IMG-20240322-WA0088.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0089.jpg" data-lightbox="family-images" data-title="Image 25">
+        <img src="images/IMG-20240322-WA0089.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0090.jpg" data-lightbox="family-images" data-title="Image 26">
+        <img src="images/IMG-20240322-WA0090.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0091.jpg" data-lightbox="family-images" data-title="Image 27">
+        <img src="images/IMG-20240322-WA0091.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0092.jpg" data-lightbox="family-images" data-title="Image 28">
+        <img src="images/IMG-20240322-WA0092.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0093.jpg" data-lightbox="family-images" data-title="Image 29">
+        <img src="images/IMG-20240322-WA0093.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0094.jpg" data-lightbox="family-images" data-title="Image 30">
+        <img src="images/IMG-20240322-WA0094.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0095.jpg" data-lightbox="family-images" data-title="Image 31">
+        <img src="images/IMG-20240322-WA0095.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0098.jpg" data-lightbox="family-images" data-title="Image 34">
+        <img src="images/IMG-20240322-WA0098.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0101.jpg" data-lightbox="family-images" data-title="Image 37">
+        <img src="images/IMG-20240322-WA0101.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0104.jpg" data-lightbox="family-images" data-title="Image 40">
+        <img src="images/IMG-20240322-WA0104.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0105.jpg" data-lightbox="family-images" data-title="Image 41">
+        <img src="images/IMG-20240322-WA0105.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0106.jpg" data-lightbox="family-images" data-title="Image 42">
+        <img src="images/IMG-20240322-WA0106.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0107.jpg" data-lightbox="family-images" data-title="Image 43">
+        <img src="images/IMG-20240322-WA0107.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0108.jpg" data-lightbox="family-images" data-title="Image 44">
+        <img src="images/IMG-20240322-WA0108.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0109.jpg" data-lightbox="family-images" data-title="Image 45">
+        <img src="images/IMG-20240322-WA0109.jpg" class="thumbnail">
+      </a>
+      <a href="images/IMG-20240322-WA0110.jpg" data-lightbox="family-images" data-title="Image 46">
+        <img src="images/IMG-20240322-WA0110.jpg" class="thumbnail">
+      </a>
     </section>
-    
+
     <section id="videos">
       <h2>VIDÉOS</h2>
-      <p> Les Vidéos seront disponibles dans quelques Jour!</p>
+      <p>Vidéos familiales à venir...</p>
     </section>
 
     <section id="biographies">
       <h2>BIOGRAPHIES</h2>
-      <p>Les biographies des membres importants de la famille Keur Mame Diamangal.</p>
-    </section>
+        <h3>ARBRE GÉNÉALOGIQUE DIAME MANGALE</h3>
+        
+        <!-- Famille de Hawa -->
+        <div class="famille">
+          <h3>1. HAWA</h3>
+          <div class="lignée">
+            <h4>Allarba</h4>
+            <ul>
+              <li>Mbène Diop</li>
+              <li>Nianga Diop</li>
+              <li>Ngoné Diop</li>
+              <li>Niakhaté Diop</li>
+              <li>Déthié Diop</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Altiné</h4>
+            <ul>
+              <li>Ndiouga</li>
+              <li>Ameth</li>
+              <li>Mariama</li>
+              <li>Yoro</li>
+            </ul>
+            <h5>Descendance de Yoro</h5>
+            <ul>
+              <li>Abdou Karim</li>
+              <li>Boubou</li>
+              <li>Aminata</li>
+            </ul>
+            <h5>Descendance de Samba</h5>
+            <ul>
+              <li>Cheikh</li>
+              <li>Oumy</li>
+              <li>Aissata</li>
+            </ul>
+            <h5>Descendance d'Aminata</h5>
+            <ul>
+              <li>Binta Malick</li>
+              <li>Béllale Sow</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Dandio</h4>
+            <ul>
+              <li>Aminata</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Famille de Fama -->
+        <div class="famille">
+          <h3>2. FAMA</h3>
+          <div class="lignée">
+            <h4>Ndiaga</h4>
+            <ul>
+              <li>Aladji</li>
+              <li>Ass Malick</li>
+              <li>Ismaila</li>
+              <li>Amy Sow</li>
+              <li>Djiby Sow</li>
+              <li>Maguette</li>
+              <li>Modou</li>
+              <li>Aby Sow</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Ali x Ngoné</h4>
+            <ul>
+              <li>Amadou</li>
+              <li>Yacine</li>
+              <li>Fatél</li>
+              <li>Coumbél</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Woury</h4>
+            <ul>
+              <li>Aminata</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Aissata</h4>
+            <ul>
+              <li>Aliou</li>
+              <li>Ameth</li>
+              <li>Malick</li>
+              <li>Mouraye</li>
+              <li>Assétte</li>
+              <li>Béllale Dandio</li>
+              <li>Aminata</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Famille de Dandio -->
+        <div class="famille">
+          <h3>3. DANDIO</h3>
+          <div class="lignée">
+            <h4>Coumbél</h4>
+            <ul>
+              <li>Mama</li>
+              <li>Birame</li>
+              <li>Maissa</li>
+              <li>Ndiabél</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Altiné</h4>
+            <ul>
+              <li>Samba</li>
+              <li>Woury</li>
+              <li>Thiana</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Aminata</h4>
+            <ul>
+              <li>Aicha Ba</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Amath</h4>
+            <ul>
+              <li>Fati</li>
+              <li>Thiédélld</li>
+              <li>Mbayélle (ancien combattant)</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Demba x Aissata</h4>
+            <ul>
+              <li>Diouma (Dioumél)</li>
+              <li>Lala</li>
+              <li>Boubacar</li>
+            </ul>
+          </div>
+          <div class="lignée">
+            <h4>Gana</h4>
+            <ul>
+              <li>Assane</li>
+              <li>Ousmane (Quédél)</li>
+              <li>Ngoné (Dioumél)</li>
+              <li>Nayélle (Coumbél)</li>
+              <li>Aissata</li>
+              <li>Pollél</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
     <section id="reportages">
       <h2>REPORTAGES</h2>
-      <p>Les reportages réalisés par et pour la famille.</p>
+      <p>Reportages familiaux à venir...</p>
     </section>
   </main>
-  
+
   <footer>
-    <p>&copy; 2024 KEUR MAME DIAMANGAL. Tous droits réservés.</p>
+    <p>Copyright © 2024 - KEUR MAME DIAME MANGAL</p>
   </footer>
 </body>
 </html>
